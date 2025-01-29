@@ -77,7 +77,7 @@ function suspendreUtilisateur() {
         body: raw,
     };
 
-    fetch(`https://ecoride.alwaysdata.net/admin/users/${userId}/role`, requestOptions)
+    fetch(`https://main-bvxea6i-e2v3bbof3llnq.fr-4.platformsh.site/admin/users/${userId}/role`, requestOptions)
         .then((response) => {
             if (!response.ok) {
                 throw new Error(`Erreur HTTP : ${response.status}`);

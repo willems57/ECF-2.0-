@@ -27,7 +27,7 @@ function contact(){
         redirect: "follow"
       };
 
-      fetch("https://ecoride.alwaysdata.net/api/contacts", requestOptions)
+      fetch("https://main-bvxea6i-e2v3bbof3llnq.fr-4.platformsh.site/api/contacts", requestOptions)
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.error(error));

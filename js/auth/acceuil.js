@@ -75,7 +75,7 @@ function fetchTrajets() {
         return;
     }
 
-    const apiUrl = `https://ecoride.alwaysdata.net/api/api/Trajets?depart=${encodeURIComponent(departInput)}&arrive=${encodeURIComponent(arriveInput)}&datetime=${encodeURIComponent(datedInput)}`;
+    const apiUrl = `https://main-bvxea6i-e2v3bbof3llnq.fr-4.platformsh.site/api/api/Trajets?depart=${encodeURIComponent(departInput)}&arrive=${encodeURIComponent(arriveInput)}&datetime=${encodeURIComponent(datedInput)}`;
     
     fetch(apiUrl)
         .then(response => {
@@ -146,7 +146,7 @@ btndetails.addEventListener("click", checkCredentials2);
                 redirect: 'follow'
             };
         
-            fetch("https://ecoride.alwaysdata.net/api/trajets", requestOptions)
+            fetch("https://main-bvxea6i-e2v3bbof3llnq.fr-4.platformsh.site/api/trajets", requestOptions)
             .then(response =>{
                 if(response.ok){
                     return response.json();
